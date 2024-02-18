@@ -1,0 +1,18 @@
+<div class="flex items-center justify-between container mx-auto mt-4">
+    <div>
+        <h1>LOGO</h1>
+    </div>
+    <div class="flex gap-3 items-center">
+       <a href="/product"><h1>Product</h1></a>
+     <a href="/add"><h1>Add</h1></a>
+     <div>
+      {{#if token}}
+      <a href="/logout"><button class="bg-red-500 text-white p-3 rounded">Logout</button></a>
+      {{else}}
+      <a href="/login"><button class="bg-blue-500 text-white p-3 rounded">Login</button></a>
+      <a href="/register"><button class="bg-green-500 text-white p-3 rounded">Register</button></a>
+      {{/if}}
+     
+     </div>
+    </div>
+</div>
